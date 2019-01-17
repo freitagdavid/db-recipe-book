@@ -14,6 +14,7 @@ exports.up = function(knex, Promise) {
             .inTable('recipes')
             .notNullable();
         table.float('quantity').notNullable();
+        table.string('unit').notNullable();
     });
 };
 
