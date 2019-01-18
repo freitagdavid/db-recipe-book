@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
             .string('name')
             .notNullable()
             .unique();
-        table.string('directions').notNullable();
+        table.text('directions').notNullable();
         table
             .integer('dish_id')
             .unsigned()
